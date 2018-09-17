@@ -1,5 +1,5 @@
 ---
-title: "Lab 02 - What should I major in?"
+title: "Lab 02 - You should Major in Engineering"
 subtitle: "Data wrangling and visualization"
 author: "RS, VW, and NE"
 output: 
