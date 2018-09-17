@@ -1,6 +1,7 @@
 ---
 title: "Lab 02 - What should I major in?"
 subtitle: "Data wrangling and visualization"
+author: "RS, VW, and NE"
 output: 
   tufte::tufte_html:
     tufte_variant: "envisioned"
