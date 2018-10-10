@@ -271,8 +271,11 @@ Let's start simple and take a look at the distribution of all median incomes,
 without considering the major categories.
 
 ```{r}
+options(scipen = 99)
+
 ggplot(data = college_recent_grads, mapping = aes(x = median)) +
-  geom_histogram()
+  geom_histogram(binwidth = 1500)
+
 ```
 
 Along with the plot, we get a message:
