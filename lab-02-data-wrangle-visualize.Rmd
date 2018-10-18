@@ -1,7 +1,7 @@
 ---
 title: "Lab 02 - You should Major in Engineering"
 subtitle: "Data wrangling and visualization"
-author: "Team"
+author: "Team!"
 output: 
   tufte::tufte_html:
     tufte_variant: "envisioned"
@@ -274,7 +274,7 @@ without considering the major categories.
 options(scipen = 99)
 
 ggplot(data = college_recent_grads, mapping = aes(x = median)) +
-  geom_histogram(binwidth = 1500)
+  geom_histogram(binwidth = 1000)
 
 ```
 
@@ -311,6 +311,8 @@ for describing the distribution. Write up your description (remember
 shape, center, spread, any unusual observations) and include the summary 
 statistic output as well.
 
+
+
 Next, we facet the plot by major category.
 
 ```{r}
@@ -322,6 +324,12 @@ ggplot(data = college_recent_grads, mapping = aes(x = median)) +
 6. Plot the distribution of `median` income using a histogram, 
 faceted by `major_category`. Use the `binwidth` you chose in the earlier 
 exercise.
+
+```{r}
+ggplot(data = college_recent_grads, mapping = aes(x = median)) +
+  geom_histogram(binwidth=1000) +
+  facet_wrap( ~ major_category, ncol = 4)
+```
 
 Now that we've seen the shapes of the distributions of 
 median incomes for each major category, we should have a better idea for 
@@ -337,7 +345,7 @@ direction.
 college_recent_grads %>%
   group_by(major_category) %>%
   summarise(___ = ___(median)) %>%
-  arrange(___)
+  arrange(___()
 ```
 
 8. Which major category is the least popular in this sample? 
